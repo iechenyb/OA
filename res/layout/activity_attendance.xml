@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <TextView android:id="@+id/kaoqin_benzhou_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/kaoqin_benzhou"/>
+
+    <TextView android:id="@+id/kaoqin_shangzhou_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/kaoqin_shangzhou"/>
+</FrameLayout>

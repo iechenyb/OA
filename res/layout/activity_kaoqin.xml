@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/kaoqin_table_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:collapseColumns="2"
+        android:stretchColumns="1" 
+        android:gravity="center_horizontal"
+        >
+        <TableRow>
+            <TextView
+                android:id="@+id/kaoqin_week_view"
+                android:gravity="center_horizontal"
+                android:text="@string/kaoqin_week"
+                android:textSize="20dp"
+                android:layout_margin="2dip"
+                android:background="#94AAD6"
+                android:visibility="gone"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                 android:id="@+id/kaoqin_kaoqin_view"
+                android:gravity="center_horizontal"
+                android:text="@string/kaoqin_kaoqinnr"
+                android:textSize="20dp"
+                android:layout_margin="2dip"
+                android:background="#94AAD6"
+                android:visibility="gone"
+                android:textStyle="bold" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

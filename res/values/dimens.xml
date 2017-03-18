@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="public_title_height">40.0dip</dimen>
+    <dimen name="manager_account_margin">10.0dip</dimen>
+    
+</resources>

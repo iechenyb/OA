@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/xyoa_contacts_search_online"
+        android:layout_width="fill_parent"
+         android:layout_height="40.0dip"
+            android:background="#1B4F93"
+            android:gravity="center" 
+            android:paddingLeft="10.0dip" 
+            android:orientation="horizontal">
+            <TextView 
+                android:id="@+id/contacts_search_button_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="18.0dip"
+                android:gravity="center"
+                android:text="检索数据"
+                />
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/contacts_department"
+                android:layout_gravity="center"
+                android:contentDescription="@string/contacts_department"/>
+    </LinearLayout>
+    
+    <ProgressBar
+            android:id="@+id/onlinedatasloadingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+     />
+    <TextView 
+            android:id="@+id/onlinedatasloadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/onlinedatasloadingBar"
+            android:text="数据加载中"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+        />
+    <ListView
+        android:id="@+id/contactslistViewOnline"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/xyoa_contacts_search_online"
+        android:cacheColorHint="#D7D7D7"
+        android:divider="#D7D7D7"
+        android:dividerHeight="1dp"
+        android:headerDividersEnabled="true" 
+        android:footerDividersEnabled="true"
+        android:fadingEdge="none"
+        android:listSelector="#D7D7D7" />
+</RelativeLayout>

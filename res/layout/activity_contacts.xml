@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/xyoa_contacts_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:background="#1B4F93"
+            android:gravity="center" 
+            android:paddingLeft="10.0dip" 
+            android:orientation="horizontal"
+            >
+            <TextView 
+                android:id="@+id/contacts_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="18.0dip"
+                android:gravity="center"
+                android:text="所有部门"
+                />
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/contacts_department"
+                android:layout_gravity="center"
+                android:contentDescription="@string/contacts_department"/>
+            <ImageView
+                android:id="@+id/clear_department" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clear_dept"
+                android:layout_marginRight="6dip"
+                android:visibility="gone"
+                android:contentDescription="@string/contacts_department"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="36dip"
+            android:layout_margin="3dip"
+            android:background="@drawable/contact_bg_edittext"
+            android:drawableLeft="@drawable/ic_hi_search"
+            android:hint="请输入拼音或首字母检索"
+            android:padding="5dip"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA" />
+        <TextView 
+            android:layout_margin="3dip"
+            android:id="@+id/edit_search_count"
+            android:layout_width="match_parent"
+            android:layout_height="28dip"
+            android:padding="5dip"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:background="#ECECEC"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/contactslistView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/xyoa_contacts_search"
+        android:cacheColorHint="#D7D7D7"
+        android:divider="#D7D7D7"
+        android:dividerHeight="1dp"
+        android:headerDividersEnabled="true" 
+        android:footerDividersEnabled="true"
+        android:fadingEdge="none"
+        android:listSelector="#D7D7D7" />
+</RelativeLayout>
